@@ -17,7 +17,7 @@ Foram aplicadas técnicas de **EDA (Exploração de Dados)**, pré-processamento
 
 1-Clone este repositório:
 
-git clone [https://github.com/seu-usuario/medcost-predict.git](https://github.com/CarlosEduuu0/medical-cost-predict.git)
+git clone https://github.com/CarlosEduuu0/medical-cost-predict.git
 
 
 2-crie um ambiente vitual com pyton pelo menos 3.10
