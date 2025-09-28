@@ -13,6 +13,29 @@ Foram aplicadas técnicas de **EDA (Exploração de Dados)**, pré-processamento
 
 ---
 
+## ⚙️ Instalação
+
+1-Clone este repositório:
+
+git clone https://github.com/seu-usuario/medcost-predict.git
+cd medcost-predict
+
+2-crie um ambiente vitual com pyton pelo menos 3.10
+
+
+3-instale um requiremnets.txt em docs
+
+pip install -r requirements.txt
+
+4-rode o dashboard.py e acessa url
+
+---
+👥 Equipe
+
+- Carlos Silva
+
+- Alberto Acosta
+---
 ## 📂 Estrutura do Projeto
 ```plaintext
 medical-cost-predict/
@@ -25,17 +48,3 @@ medical-cost-predict/
 ├── insurance.csv          # Dataset
 
 
-## ⚙️ Instalação
-
-1-Clone este repositório:
-
-git clone https://github.com/seu-usuario/medcost-predict.git
-cd medcost-predict
-
-2-crie um ambiente vitual com pyton pelo menos 3.10
-
-3-instale um requiremnets.txt em docs
-
-pip install -r requirements.txt
-
-4-rode o dashboard.py e acessa url
