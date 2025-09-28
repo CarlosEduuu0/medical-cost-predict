@@ -3,7 +3,7 @@
 
 ## 📌 Descrição
 Este projeto tem como objetivo analisar o dataset **Insurance** (custos médicos) e construir modelos de **regressão** para prever os valores de despesas médicas (`charges`).  
-Foram aplicadas técnicas de **EDA (Exploração de Dados)**, pré-processamento e diferentes modelos de machine learning, como **Regressão Linear, Random Forest, XGBoost e SVR**.  
+Foram aplicadas técnicas de **EDA (Exploração de Dados)**, pré-processamento e diferentes modelos de machine learning, como **Regressão Linear, Random Forest, XGBoost e SVR**,Além de também desenvolver um dashboard para analise é interação com modelos.  
 
 ---
 ## 📊 dashboard
