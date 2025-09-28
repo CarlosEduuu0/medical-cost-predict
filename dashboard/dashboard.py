@@ -7,7 +7,7 @@ from dash_bootstrap_templates import ThemeSwitchAIO
 import joblib
 
 
-df = pd.read_csv("insurance.csv")
+df = pd.read_csv("C:/medical-cost-predict/insurance.csv")
 
 
 df["categoria_bmi"] = pd.cut(
@@ -18,12 +18,12 @@ df["categoria_bmi"] = pd.cut(
 BMI_options = [{'label': x, 'value': x} for x in df['categoria_bmi'].unique()]
 
 
-random_forest = joblib.load("random_forest.pkl")
-regressao_linear = joblib.load("regressão_linear.pkl")
-xgboost_model = joblib.load("XGboost.pkl")
+random_forest = joblib.load("C:/medical-cost-predict/modelos-encoder/random_forest.pkl")
+regressao_linear = joblib.load("C:/medical-cost-predict/modelos-encoder/regressão_linear.pkl")
+xgboost_model = joblib.load("C:/medical-cost-predict/modelos-encoder/XGboost.pkl")
 
-encoder = joblib.load("encoder.pkl")
-scaler = joblib.load("scaler.pkl")
+encoder = joblib.load("C:/medical-cost-predict/modelos-encoder/encoder.pkl")
+scaler = joblib.load("C:/medical-cost-predict/modelos-encoder/scaler.pkl")
 
 categorical_cols = ["sex", "smoker", "region"]
 numeric_cols = ["age", "bmi", "children"]
@@ -133,7 +133,8 @@ app.layout = dbc.Container([
 def update_main_graphs(toggle):
     template = template_theme1 if toggle else template_theme2
 
-    fig1 = px.histogram(df, x="age", nbins=20, title="Distribuição de Idade", template=template)
+    fig1 = px.histogram(df, x="age", nbins=20, title="Distribuição de Idade")
+    fig1.update_traces(marker_line_color="black", marker_line_width=1)
     fig2 = px.box(df, x="smoker", y="charges", title="Charges por Tabagismo", template=template)
     fig3 = px.scatter(df, x="bmi", y="charges", color="sex", title="Charges vs BMI", template=template)
     fig4 = px.violin(df, x="region", y="charges", box=True, title="Charges por Região", template=template)
