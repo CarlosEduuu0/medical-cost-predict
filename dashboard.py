@@ -48,6 +48,7 @@ app.layout = dbc.Container([
 
 #callbacks
 # Grafico de barras - Custo por BMI
+# Grafico scatter - Custo por idade e se é fumante
 @app.callback(
     Output('graph-bmi', 'figure'),
     Output('graph-age-smoker', 'figure'),
@@ -72,3 +73,4 @@ def bar(categoria_bmi, toggle ):
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True, port='8051')  
+
